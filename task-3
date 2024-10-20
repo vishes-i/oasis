@@ -1,0 +1,122 @@
+
+import java.util.Scanner;
+
+public class Main
+{
+
+    public static void main(String args[] )
+    {
+
+        int balance = 100000, withdraw, deposit;
+
+
+        Scanner sc = new Scanner(System.in);
+
+        while(true)
+        {  System.out.println("WELCOME TO ATM ");
+            System.out.println("AUTOMATED TELLER MACHINE ATM:");
+            System.out.println("CHOOSE 1: for WITHDRAW A MONEY");
+            System.out.println("CHOOSE 2: for DEPOSIT");
+            System.out.println("CHOOSE 3: for CHECK  YOUR ACCOUNT BALANCE");
+            System.out.println("CHOOSE 4: for CHECK  YOUR ACCOUNT TRANSCATION HISTORY");
+            System.out.println("CHOOSE 5: for EXIT");
+            System.out.print("CHOOSE THE OPERATION YOU WANT TO PERFORM:");
+
+
+            int choice = sc.nextInt();
+            switch(choice)
+            {
+                case 1:
+                    System.out.print("Enter money to be withdrawn:");
+
+
+                    withdraw = sc.nextInt();
+
+
+                    if(balance >= withdraw)
+                    {
+
+                        balance = balance - withdraw;
+                        System.out.println("Please collect your money");
+                    }
+                    else
+                    {
+
+                        System.out.println("Insufficient Balance");
+                    }
+                    System.out.println("");
+                    break;
+
+                case 2:
+
+                    System.out.print("Enter money to be deposited:");
+
+
+                    deposit = sc.nextInt();
+
+
+                    balance = balance + deposit;
+                    System.out.println("Your Money has been successfully depsited");
+                    System.out.println("");
+                    break;
+
+                case 3:
+
+                    System.out.println("Balance : "+balance);
+                    System.out.println("");
+                    break;
+                case 4:
+                    System.out.println("CHECK YOUR ACCOUNT HISTORY:");
+                    System.out.println("transaction id:15435646");
+                    System.out.println(" Tejashwani  Singh Rathore " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println( "transaction id:154356477");
+                    System.out.println(" swati  Singh  " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:1543564697");
+                    System.out.println(" swati chaurasiya " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:15435646876");
+                    System.out.println(" tejas Rathore " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:1543564632");
+                    System.out.println(" rohit rawat" );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:1543564456");
+                    System.out.println(" kumkum  Singh Rathore " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:154356443456");
+                    System.out.println(" saumya  Singh  " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:1543564456450056");
+                    System.out.println(" nikita  Singh  " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:154356445621");
+                    System.out.println(" dipali yadav " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:1543564456345");
+                    System.out.println(" sagun singh " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:1543564456");
+                    System.out.println(" gungun rathore " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:15435634524445689");
+                    System.out.println(" madhu prajapati" );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:15435644560005");
+                    System.out.println(" pari prajapati " );
+                    System.out.println("---------------------------------------------------------");
+                    System.out.println("transaction id:1543564456899877");
+                    System.out.println("ayushi singh " );
+                    System.out.println("---------------------------------------------------------");
+
+
+                case 5:
+
+                    System.exit(0);
+            }
+        }
+    }
+}
+
+
